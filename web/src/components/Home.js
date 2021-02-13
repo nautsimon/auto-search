@@ -142,6 +142,11 @@ class Home extends React.Component {
         <a href="">
           <img src={qImg} className="qImg" alt="logo" />
         </a>
+
+        <h1 className="emailTxt">
+          for questions or to report bugs contact: simonm@uchicago.edu
+        </h1>
+
         <div className="topDiv">
           <div className="marginDiv">
             <div className="form">
@@ -178,6 +183,7 @@ class Home extends React.Component {
                 ></input>
               </div>
               <div className="rightForm">
+                <p className="formInputTxt">Search terms</p>
                 <textarea
                   disabled={this.state.disabled ? "disabled" : ""}
                   onChange={this.onQueryChange.bind(this)}
