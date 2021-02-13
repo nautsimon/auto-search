@@ -81,7 +81,7 @@ class Home extends React.Component {
     let loop = () => {
       return new Promise((resolve, reject) => {
         try {
-          sanitizeData(sanitized[i])
+          sanitizeData(sanitized[this.state.currentIndex])
             .then((searchPhrase) => {
               updateState(searchPhrase);
             })
@@ -97,7 +97,6 @@ class Home extends React.Component {
           console.log("skipped invalid line");
         }
         setTimeout(() => {
-          i++;
           if (
             this.state.pause != true &&
             this.state.currentIndex < sanitized.length
@@ -139,7 +138,11 @@ class Home extends React.Component {
     return (
       <div>
         <img src={logo} className="logoImg" alt="logo" />
-        <a href="">
+        <a
+          href="https://youtu.be/0OZk5uGWZLM"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={qImg} className="qImg" alt="logo" />
         </a>
 
