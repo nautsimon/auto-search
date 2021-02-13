@@ -5,7 +5,7 @@ import qImg from "./qss.png";
 class Home extends React.Component {
   state = {
     raw: "",
-    current: "<search query>",
+    current: "",
     gUrl: "",
     iUrl: "",
     message: "Begin query to see results below.",
@@ -57,7 +57,7 @@ class Home extends React.Component {
     let updateStateFail = () => {
       return new Promise((resolve, reject) => {
         this.setState({
-          message: "Index out of bounds, reset row to start at.",
+          message: "Index out of bounds, reset starting row num.",
         });
       });
     };
@@ -167,7 +167,7 @@ class Home extends React.Component {
                   onChange={this.onTimeChange.bind(this)}
                   value={this.state.time}
                 ></input>
-                <p className="formInputTxt"> What row to start at.</p>
+                <p className="formInputTxt">What row to start at.</p>
                 <input
                   disabled={this.state.disabled ? "disabled" : ""}
                   placeholder="start at"
