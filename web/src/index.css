@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body,
+html {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+h1,
+h6,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+.topDiv {
+  height: 30vh;
+}
+.logoImg {
+  width: 200px;
+  position: absolute;
+  margin-left: 20px;
+  padding: 0px;
+  top: 0px;
+  margin-top: 20px;
+}
+.qImg {
+  width: 40px;
+  position: absolute;
+  right: 0px;
+  margin-right: 20px;
+  padding: 0px;
+  top: 0px;
+  margin-top: 20px;
+}
+
+.wrap {
+  width: 50vw;
+  height: 70vh;
+  bottom: 0px;
+  border: 0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+iframe {
+  width: 200%;
+  height: 200%;
+  overflow: hidden;
+  -moz-transform: scale(0.5);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.5);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+}
+/* iframe {
+  width: 100%;
+  height: 100%;
+  zoom: 0.75;
+  -moz-transform: scale(0.75);
+  -moz-transform-origin: 0 0;
+  -o-transform: scale(0.75);
+  -o-transform-origin: 0 0;
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: 0 0;
+} */
+.iframeB {
+  width: 150%;
+  height: 150%;
+  transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.right {
+  width: 50vw;
+  height: 70vh;
+  bottom: 0px;
+  border: 0;
+  overflow: hidden;
+}
+
+.marginDiv {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.form {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.leftForm {
+  width: 48%;
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightForm {
+  width: 48%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formInputTxt {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  text-align: left;
+  font-size: 10px;
+}
+textarea {
+  width: 100%;
+  height: 93%;
+  margin-top: 7%;
+}
+.searchingTxt {
+  font-size: 10px;
+  border-radius: 10px;
+  padding: 7px 3px;
+}
+
+.messageTxt {
+  margin-top: 10px;
+  padding-top: 5px;
+
+  /* text-align: center; */
+
+  /* display: flex; */
+}
+
+/* div#frameDiv > iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+} */
